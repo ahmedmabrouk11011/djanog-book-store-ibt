@@ -7,7 +7,6 @@ on:
   workflow_dispatch:
 jobs:
   Deploy-on-AWS:
-    needs: build-Docker-Image
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 
