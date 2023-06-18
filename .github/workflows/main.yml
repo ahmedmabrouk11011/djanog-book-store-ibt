@@ -32,3 +32,6 @@ jobs:
           cd /home/ubuntu/djanog-book-store-ibt
           docker-compose down --rmi all
           docker-compose up -d
+          docker-compose exec web python manage.py makemigrations --noinput
+          docker-compose exec web python manage.py migrate --noinput
+          
